@@ -8,38 +8,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div>
-        <article>
-          <img src="" alt="" />
+        <article class="contact-details">
+          <img class="icon" src="phone_icon.png" alt="Icon of a phone" />
           <span>+00 123 4455 6666</span>
-          <img src="" alt="" />
+          <span>|</span>
+          <img class="icon" src="mail_icon.png" alt="Icon of a mail" />
           <span>mail@example.com</span>
         </article>
-        <article>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <article class="social-media">
+          <img
+            class="icon"
+            src="facebook_icon.png"
+            alt="Icon of Facebook app"
+          />
+          <img
+            class="icon"
+            src="twitter_bird_icon.png"
+            alt="Icon of Twitter app"
+          />
+          <img
+            class="icon"
+            src="instagram_icon.png"
+            alt="Icon of Instagram app"
+          />
         </article>
       </div>
       <div>
-        <h1><span>One</span>-Health</h1>
+        <h1><span class="green">One</span>-Health</h1>
 
-        <form action="">
-          <img src="" alt="" />
-          <input type="text" placeholder="Enter keyword.." />
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Doctors</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <a href="#">Login/Register</a>
+        <form action="" class="search-bar">
+          <div>
+            <span class="search-icon">
+              <img
+                class="icon"
+                src="search_icon.png"
+                alt="Img of a search icon"
+              />
+            </span>
+            <input type="text" placeholder="Enter keyword.." />
+          </div>
         </form>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="btn" href="#">Login/Register</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <section id="ad-section">
