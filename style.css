@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
   width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 {
+  font-size: 56px;
+}
+.icon {
+  width: 20px;
+  margin-right: 5px;
 }
 .contact-details {
   display: flex;
@@ -13,10 +23,6 @@ body {
 .contact-details span {
   padding-right: 20px;
   color: #a1aaa7;
-}
-.icon {
-  width: 20px;
-  margin-right: 5px;
 }
 
 #header > div {
@@ -35,7 +41,7 @@ body {
   color: #00d9a5;
 }
 
-.nav-bar a,
+a,
 li {
   list-style: none;
   text-decoration: none;
@@ -54,13 +60,13 @@ li {
   justify-content: center;
   position: relative;
 }
-
-.nav-bar .btn {
+.btn {
   color: white;
   background-color: #00d9a5;
-  padding: 5px 10px;
+  padding: 10px 25px;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 
 .search-bar input {
@@ -88,3 +94,70 @@ li {
   text-align: center;
   margin: auto;
 }
+
+#ad-section {
+  background-image: url("bg_image_1.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ad-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-tint {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-tint::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 30, 30, 0.6);
+  z-index: -1;
+}
+
+#ad-section h1 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#ad-section p {
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* .nav-bar a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(110, 128, 122, 0.8);
+  padding-right: 5px;
+} */
+/* .nav-bar .btn {
+  color: white;
+  background-color: #00d9a5;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+} */
+
+/* background-position: 0px -250px; */
