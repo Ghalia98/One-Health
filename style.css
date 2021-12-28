@@ -7,9 +7,18 @@
 body {
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  color: #343531;
 }
 h1 {
   font-size: 56px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 20px;
 }
 .icon {
   width: 20px;
@@ -145,6 +154,105 @@ li {
   line-height: 1.5rem;
 }
 
+#intro-section {
+  height: 580px;
+  background-color: #f5f9f6;
+}
+#intro-section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#intro-section p {
+  width: 80%;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+  color: #6e807a;
+}
+
+#intro-section h2 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 75%;
+}
+
+#intro-section #paragraph-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 20%;
+}
+#intro-section #doctor-img {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+#intro-section img {
+  width: 400px;
+}
+#purple-bg {
+  background-color: #4e5afe;
+}
+#green-bg {
+  background-color: #00d9a5;
+}
+#pink-bg {
+  background-color: #ff3d85;
+}
+#three-boxes-container {
+  background-color: #f5f9f6;
+  position: relative;
+  z-index: 1;
+}
+#three-boxes-container > article > div {
+  background-color: transparent;
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translatey(-30%);
+}
+
+#three-boxes-container .box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
+  background-color: white;
+  width: 260px;
+  padding: 20px;
+}
+
+#three-boxes-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+#three-boxes-container .icon-img {
+  width: 40px;
+}
+
+#three-boxes-container h4 {
+  font-weight: 400;
+  width: 45%;
+}
 /* .nav-bar a,
 li {
   list-style: none;
