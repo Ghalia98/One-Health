@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -15,6 +15,7 @@ h1 {
 
 h2 {
   font-size: 40px;
+  font-weight: 500;
 }
 
 h4 {
@@ -154,8 +155,64 @@ li {
   line-height: 1.5rem;
 }
 
+#three-boxes-container .icon-img {
+  width: 40px;
+}
+
+#purple-bg {
+  background-color: #4e5afe;
+}
+#green-bg {
+  background-color: #00d9a5;
+}
+#pink-bg {
+  background-color: #ff3d85;
+}
+#three-boxes-container {
+  background-color: #f5f9f6;
+  position: relative;
+  z-index: 1;
+}
+#three-boxes-container > div {
+  background-color: transparent;
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translatey(-30%);
+}
+
+#three-boxes-container .box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
+  background-color: white;
+  width: 260px;
+  padding: 20px;
+}
+
+#three-boxes-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+#three-boxes-container h4 {
+  font-weight: 400;
+  width: 45%;
+}
 #intro-section {
-  height: 580px;
+  height: 540px;
   background-color: #f5f9f6;
 }
 #intro-section > div {
@@ -198,60 +255,105 @@ li {
 #intro-section img {
   width: 400px;
 }
-#purple-bg {
-  background-color: #4e5afe;
-}
-#green-bg {
-  background-color: #00d9a5;
-}
-#pink-bg {
-  background-color: #ff3d85;
-}
-#three-boxes-container {
-  background-color: #f5f9f6;
-  position: relative;
-  z-index: 1;
-}
-#three-boxes-container > article > div {
-  background-color: transparent;
-  width: 70%;
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
+
+#doctors-section {
+  width: 100%;
+  height: 650px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  transform: translatey(-30%);
 }
 
-#three-boxes-container .box {
-  box-sizing: border-box;
+#doctors-section > div {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
-  background-color: white;
-  width: 260px;
-  padding: 20px;
 }
 
-#three-boxes-container span {
+#doctors-section .dr-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 240px;
+  height: 345px;
+  border: 0.5px solid transparent;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgb(154 159 151 / 20%);
+  box-sizing: content-box;
+}
+
+.dr-info-box img {
+  width: 100%;
+  height: 265px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.dr-info-box span {
+  color: #6e807a;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.dr-info-box h4 {
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+#doctors-section #slide-btn-container {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+#doctors-section .slide-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
-  border: 1px solid transparent;
-  border-radius: 50%;
+  width: 37px;
+  height: 36px;
+  box-sizing: border-box;
 }
-#three-boxes-container .icon-img {
-  width: 40px;
+#first-slide-btn {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: inline-block;
+  transform: translateX(6%);
+  padding-left: 10px;
+}
+#second-slide-btn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: inline-block;
+  transform: translateX(-6%);
+  padding-right: 10px;
 }
 
-#three-boxes-container h4 {
-  font-weight: 400;
-  width: 45%;
+#first-slide-btn img {
+  padding-left: 10px;
+}
+
+#second-slide-btn img {
+  padding-right: 10px;
+}
+
+#first-slide-btn span,
+#second-slide-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#slide-btn-container img {
+  width: 25px;
 }
 /* .nav-bar a,
 li {
