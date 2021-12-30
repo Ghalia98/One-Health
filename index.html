@@ -229,12 +229,13 @@
       <h2>Make an Appointment</h2>
       <form action="">
         <div>
-          <input type="text" />
-          <input type="email" />
+        <div>
+          <input class="input"  type="text" placeholder="Full name" />
+          <input class="input" type="date" />
         </div>
         <div>
-          <input type="date" />
-          <select name="" id="">
+          <input class="input"  type="email" placeholder="Email address.." />
+          <select class="input"  name="" id="">
             <option value="GH">General Health</option>
             <option value="Card">Cardiology</option>
             <option value="Den">Dental</option>
@@ -242,9 +243,10 @@
             <option value="Ortho">Orthopaedics</option>
           </select>
         </div>
-        <input type="number" />
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button type="submit">Submit Request</button>
+      </div>
+        <input class="input"  type="number" placeholder="Number.." />
+        <textarea class="input"  name="" id="" cols="30" rows="10" placeholder="Enter message.."></textarea>
+        <div class="btn-container"><button class="btn" type="submit">Submit Request</button></div>
       </form>
     </section>
     <section id="app-section">
