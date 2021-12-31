@@ -486,6 +486,58 @@ li {
   width: 100%;
   font-weight: 600;
 }
+
+#app-section {
+  height: 350px;
+  background-image: url("green-pattern5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#app-section > article {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#app-section .img-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 200px;
+}
+#app-section .img-container img {
+  width: 200px;
+}
+
+.heading-icon-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 7%;
+}
+
+.heading-icon-cont h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.heading-icon-cont > div {
+  /* width: 100%; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.heading-icon-cont > div > img {
+  margin-right: 12px;
+}
 /* .nav-bar a,
 li {
   list-style: none;
