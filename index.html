@@ -35,9 +35,8 @@
           />
         </article>
       </div>
-      <div>
+      <div class="second-header-div">
         <h1><span class="green">One</span>-Health</h1>
-
         <form action="" class="search-bar">
           <div>
             <span class="search-icon">
@@ -230,12 +229,12 @@
       <form action="">
         <div>
         <div>
-          <input class="input"  type="text" placeholder="Full name" />
-          <input class="input" type="date" />
+          <input id="name-input" class="input"  type="text" placeholder="Full name" />
+          <input id="date-input" class="input" type="date" />
         </div>
         <div>
-          <input class="input"  type="email" placeholder="Email address.." />
-          <select class="input"  name="" id="">
+          <input  id="email-input" class="input"  type="email" placeholder="Email address.." />
+          <select class="input"  name="department" id="select-input">
             <option value="GH">General Health</option>
             <option value="Card">Cardiology</option>
             <option value="Den">Dental</option>
@@ -261,8 +260,10 @@
   </div>
 </article>
     </section>
-    <footer>
-      <article id="company">
+
+    <footer id="footer">
+      <div>
+      <div class="category-container">
         <h4>Company</h4>
         <ul>
           <li>About Us</li>
@@ -270,8 +271,8 @@
           <li>Editorial Team</li>
           <li>Protection</li>
         </ul>
-      </article>
-      <article id="more">
+      </div>
+      <div class="category-container">
         <h4>More</h4>
         <ul>
           <li>Terms & Conditions</li>
@@ -279,33 +280,40 @@
           <li>Advertise</li>
           <li>Join as Doctors</li>
         </ul>
-      </article>
-      <article id="partners">
+      </div>
+      <div class="category-container">
         <h4>Our partner</h4>
         <ul>
           <li>One-Fitness</li>
           <li>One-Drugs</li>
           <li>One-Live</li>
         </ul>
-      </article>
-      <article id="Contact">
+      </div>
+      <div class="category-container">
+      <div>
         <h4>Contact</h4>
         <ul>
           <li><address>351 Willow Street Franklin, MA 02038</address></li>
           <li>701-573-7582</li>
           <li>healthcare@temporary.net</li>
         </ul>
-      </article>
-      <article>
+      </div>
+      <div class="category-container">
         <h4>Social Media</h4>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </article>
-
-      <aside>Copyright © 2020 MACode ID. All right reserved</aside>
+        <a href="#"><img class="icon" src="fb_icon.png" alt="Facebook app icon"></a>
+        <a href="#"><img class="icon" src="twitter_icon.png" alt="Twitter app icon"></a>
+        <a href="#"><img class="icon" src="google_plus_icon.png" alt="G+ app icon"></a>
+        <a href="#"><img class="icon" src="ig_icon.png" alt="Instagram app icon"></a>
+        <a href="#"><img class="icon" src="linkedin_icon.png" alt="Linkedin app icon"></a>
+      </div>
+    </div>
+    </div>
+    <aside>
+      <div>
+        <p id="copyright">
+      Copyright © 2020 <span class="green"> MACode ID. </span>All right reserved</p>
+    </div>
+  </aside>
     </footer>
     <script src="Js.js"></script>
   </body>
